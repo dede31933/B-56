@@ -37,9 +37,25 @@
   padding: 10px;
   width: 100px;
   border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-contact:hover {
+  background-color: rgb(160, 141, 141);
 }
 
 textarea.input-contact {
   resize: none;
   height: 200px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
