@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/nav.css">
+    <link rel="stylesheet" href="./assests/css/contact.css">
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav class="navigation-bar">
+      <div class="start">
+        <ul>
+          <li>
+            <img style="height: 30px;" src="./assests/img/logggo.png"
+              alt="ini logo">
+          </li>
+          <li class="nav-Link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav-Link">
+            <a href="./myProject.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <button><a href="./contact.htm">Contact Me</a></button>
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-nav">
+        <a href="./index.html">Home</a>
+        <a href="./myProject.html">My Project</a>
+        <a href="./contact.htm">Contact Me</a>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- project content start -->
+    <div class="container">
+      <form class="form-contact" onsubmit="return submitData()">
+        <label for="inputName">Name</label>
+        <input type="text" class="input-contact" id="inputName">
+
+        <label for="inputEmail">Email</label>
+        <input type="email" class="input-contact" id="inputEmail">
+
+        <label for="inputPhone">Phone Number</label>
+        <input type="number" id="inputPhone" class="input-contact"
+          pattern="[0-9]{10,15}"
+          title="Please enter a valid phone number (10-15 digits)"
+          oninput="validatePhoneNumber(this)">
+
+        <label for="inputSubject">Subject</label>
+        <select class="input-contact" id="inputSubject">
+          <option hidden>Selection</option>
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>Fullstack Developer</option>
+        </select>
+
+        <label for="inputMessage">Your Message</label>
+        <textarea class="input-contact" id="inputMessage"></textarea>
+
+        <div class="submit-container">
+          <input type="submit" value="submit" class="submit-contact">
+        </div>
+      </form>
+    </div>
+    <!-- project content end -->
+
+    <script src="./assests/js/contact.js"></script>
+    <script src="./assests/js/nav.js"></script>
+  </body>
+</html>

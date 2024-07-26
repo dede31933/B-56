@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assests/css/nav.css">
+    <link rel="stylesheet" href="./assests/css/Testimonial.css">
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav class="navigation-bar">
+      <div class="start">
+        <ul>
+          <li>
+            <img style="height: 30px;" src="./assests/img/logggo.png"
+              alt="ini logo">
+          </li>
+          <li class="nav-Link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="nav-Link">
+            <a href="./myProject.html">My Project</a>
+          </li>
+          <li class="nav-Link">
+            <a href="./Testimonial.html">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <button><a href="./contact.htm">Contact Me</a></button>
+      </div>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-nav">
+        <a href="./index.html">Home</a>
+        <a href="./myProject.html">My Project</a>
+        <a href="./contact.htm">Contact Me</a>
+        <a href="./Testimonial.html">Testimonial</a>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- content start -->
+    <div class="container">
+      <h1>My Testimonials</h1>
+      <div class="container-rating">
+        <h2>Rating By Star</h2>
+        <div class="rating">
+          <button class="rating-btn" onclick="allTestimonial()">All</button>
+          <button class="rating-btn" onclick="filterTestimonial(1)">1 <i
+              class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonial(2)">2 <i
+              class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonial(3)">3 <i
+              class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonial(4)">4 <i
+              class="fa-solid fa-star"></i></button>
+          <button class="rating-btn" onclick="filterTestimonial(5)">5 <i
+              class="fa-solid fa-star"></i></button>
+        </div>
+      </div>
+      <div class="testimonials" id="testimonials">
+      </div>
+    </div>
+    <!-- content end -->
+    <script src="./assests/js/Testimonial.js"></script>
+    <script src="./assests/js/nav.js"></script>
+  </body>
+</html>

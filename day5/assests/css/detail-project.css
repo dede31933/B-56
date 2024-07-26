@@ -1,0 +1,96 @@
+/* General Styles */
+.content-container {
+  margin: 20px auto;
+  max-width: 1120px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Title Styles */
+.content-container h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Project Details Styles */
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-info {
+  flex: 1;
+  max-width: 300px;
+}
+
+/* Duration and Technologies Styles */
+.project-duration,
+.project-technologies {
+  margin-bottom: 20px;
+}
+
+.project-duration p,
+.project-technologies p {
+  margin: 20px 0;
+}
+
+.project-duration p strong,
+.project-technologies p strong {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.project-duration p:not(:first-child),
+.project-technologies .technology {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 22px;
+  margin-bottom: 5px;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technology {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.technology i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.project-duration i {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* Description Styles */
+.project-description p {
+  line-height: 1.6;
+  text-align: justify;
+}

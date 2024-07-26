@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #cccccc;
+}
+
+.navigation-bar {
+  background-color: #ecebeb;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+}
+
+.start ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.start li {
+  margin-right: 50px;
+  font-weight: bold;
+}
+
+.nav-Link {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nav-Link a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-Link a:hover {
+  color: #5755d6;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  padding: 12px 21px;
+  border-radius: 8px;
+  cursor: pointer;
+  float: left;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+
+.contact button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  margin: 4px 0;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #ecebeb;
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  width: 90%;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.mobile-nav a {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+}
+
+/* Media Queries untuk Responsivitas */
+@media screen and (max-width: 700px) {
+  .start ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-Link,
+  .contact {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+    justify-content: center;
+    background-color: #cccccc;
+  }
+}
